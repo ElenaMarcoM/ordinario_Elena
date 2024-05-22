@@ -30,4 +30,19 @@ public class CharacterPosition
     {
         return $"{name} {timestamp} {position}"; //Interpolated String
     }
+
+    public string getName()
+    {
+        return name ;
+    }
+
+    public int getTimestamp()
+    {
+        return (int)timestamp ;
+    }
+
+   // public int getPositionX()
+    //{
+        //return position ;
+    //}
 }

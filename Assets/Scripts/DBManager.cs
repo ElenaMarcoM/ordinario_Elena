@@ -16,7 +16,10 @@ public class DBManager : MonoBehaviour
     private string SQL_CREATE_POSICIONES = "CREATE TABLE IF NOT EXISTS Posiciones" +
         "(Id INTEGER UNIQUE NOT NULL PRIMARY KEY, " +
         "Name TEXT DEFAULT 'Elena', " +
-        "TimeSpam INTEGER NOT NULL)";
+        "TimeSpam INTEGER NOT NULL, " +
+        "x INTEGER, " +
+        "y INTEGER, " +
+        "z INTEGER)";
 
     private IDbConnection dbConnection;
 
