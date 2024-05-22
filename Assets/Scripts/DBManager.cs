@@ -13,7 +13,10 @@ public class DBManager : MonoBehaviour
     public static DBManager Instance { get; private set; }
     private string dbUri = "URI=file:mydb.sqlite";
     private string SQL_COUNT_ELEMNTS = "SELECT count(*) FROM Posiciones;";
-    private string SQL_CREATE_POSICIONES = "CREATE TABLE ...";
+    private string SQL_CREATE_POSICIONES = "CREATE TABLE IF NOT EXISTS Posiciones" +
+        "(Id INTEGER UNIQUE NOT NULL PRIMARY KEY, " +
+        "Name TEXT DEFAULT 'Elena', " +
+        "TimeSpam INTEGER NOT NULL)";
 
     private IDbConnection dbConnection;
 
