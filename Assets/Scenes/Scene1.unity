@@ -1034,8 +1034,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 420630905}
-  - component: {fileID: 420630904}
   - component: {fileID: 420630903}
+  - component: {fileID: 420630906}
   m_Layer: 0
   m_Name: Brindge_hueco
   m_TagString: Untagged
@@ -1050,32 +1050,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 420630902}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6eeb5dc026fdf4b488bc7ae0138ab719, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_AgentTypeID: -334000983
-  m_StartPoint: {x: -0.41440105, y: 0, z: -1.1729636}
-  m_EndPoint: {x: -0.3348627, y: 0, z: 1.2592888}
-  m_Width: 0
-  m_CostModifier: -1
-  m_Bidirectional: 1
-  m_AutoUpdatePosition: 0
-  m_Area: 0
---- !u!114 &420630904
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 420630902}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6eeb5dc026fdf4b488bc7ae0138ab719, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_AgentTypeID: 0
   m_StartPoint: {x: -0.41440105, y: 0, z: -1.1729636}
   m_EndPoint: {x: -0.3348627, y: 0, z: 1.2592888}
   m_Width: 2
@@ -1098,6 +1078,26 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &420630906
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 420630902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6eeb5dc026fdf4b488bc7ae0138ab719, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AgentTypeID: 0
+  m_StartPoint: {x: -0.41440105, y: 0, z: -1.1729636}
+  m_EndPoint: {x: -0.3348627, y: 0, z: 1.2592888}
+  m_Width: 2
+  m_CostModifier: -1
+  m_Bidirectional: 1
+  m_AutoUpdatePosition: 0
+  m_Area: 0
 --- !u!1 &427418777
 GameObject:
   m_ObjectHideFlags: 0
@@ -3935,7 +3935,6 @@ GameObject:
   - component: {fileID: 1316579933}
   - component: {fileID: 1316579932}
   - component: {fileID: 1316579931}
-  - component: {fileID: 1316579935}
   m_Layer: 0
   m_Name: TeleportA2
   m_TagString: Untagged
@@ -4029,23 +4028,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!191 &1316579935
-OffMeshLink:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1316579930}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_AreaIndex: 0
-  m_AgentTypeID: 0
-  m_Start: {fileID: 1316579934}
-  m_End: {fileID: 2089160773}
-  m_CostOverride: -1
-  m_BiDirectional: 1
-  m_Activated: 1
-  m_AutoUpdatePositions: 0
 --- !u!1 &1354656936
 GameObject:
   m_ObjectHideFlags: 0
@@ -6756,7 +6738,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -6836,7 +6818,7 @@ OffMeshLink:
   m_GameObject: {fileID: 2089160769}
   m_Enabled: 1
   serializedVersion: 3
-  m_AreaIndex: 0
+  m_AreaIndex: 4
   m_AgentTypeID: 0
   m_Start: {fileID: 2089160773}
   m_End: {fileID: 1316579934}

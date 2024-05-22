@@ -13,8 +13,8 @@ NavMeshProjectSettings:
     cost: 2
   - name: Sand
     cost: 4
-  - name: 
-    cost: 1
+  - name: Teleport
+    cost: -1
   - name: 
     cost: 1
   - name: 
@@ -75,8 +75,8 @@ NavMeshProjectSettings:
     agentTypeID: 0
     agentRadius: 0.35
     agentHeight: 0.8
-    agentSlope: 6.7
-    agentClimb: 10
+    agentSlope: 25.7
+    agentClimb: 0.1
     ledgeDropHeight: 0.2
     maxJumpAcrossDistance: 0
     minRegionArea: 2
@@ -93,7 +93,7 @@ NavMeshProjectSettings:
     agentTypeID: -334000983
     agentRadius: 0.45
     agentHeight: 1
-    agentSlope: 0.2
+    agentSlope: 27.6
     agentClimb: 0.1
     ledgeDropHeight: 0.2
     maxJumpAcrossDistance: 0
